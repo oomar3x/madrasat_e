@@ -44,6 +44,10 @@ class _StudentSignUp4State extends State<StudentSignUp4> {
                     height: 100,
                   ),
                   DropdownButton(
+                    icon: const Icon(Icons.keyboard_arrow_down),
+                    iconEnabledColor: Colors.blue,
+                    isExpanded: true,
+                    alignment: Alignment.center,
                     borderRadius: BorderRadius.circular(30),
                     hint: const Text(
                       style: TextStyle(color: Colors.blue),
@@ -58,7 +62,10 @@ class _StudentSignUp4State extends State<StudentSignUp4> {
                     items: mondayTimeOfClass.map((mondayTimeOfClass) {
                       return DropdownMenuItem(
                         value: mondayTimeOfClass,
-                        child: Text(mondayTimeOfClass),
+                        child: Text(
+                          mondayTimeOfClass,
+                          style: const TextStyle(color: Colors.blue),
+                        ),
                       );
                     }).toList(),
                   ),
@@ -66,6 +73,10 @@ class _StudentSignUp4State extends State<StudentSignUp4> {
                     height: 100,
                   ),
                   DropdownButton(
+                    icon: const Icon(Icons.keyboard_arrow_down),
+                    iconEnabledColor: Colors.blue,
+                    isExpanded: true,
+                    alignment: Alignment.center,
                     borderRadius: BorderRadius.circular(30),
                     hint: const Text(
                       style: TextStyle(color: Colors.blue),
@@ -80,7 +91,10 @@ class _StudentSignUp4State extends State<StudentSignUp4> {
                     items: mondayTimeOfClass.map((mondayTimeOfClass) {
                       return DropdownMenuItem(
                         value: mondayTimeOfClass,
-                        child: Text(mondayTimeOfClass),
+                        child: Text(
+                          mondayTimeOfClass,
+                          style: const TextStyle(color: Colors.blue),
+                        ),
                       );
                     }).toList(),
                   ),
@@ -88,6 +102,10 @@ class _StudentSignUp4State extends State<StudentSignUp4> {
                     height: 100,
                   ),
                   DropdownButton(
+                    icon: const Icon(Icons.keyboard_arrow_down),
+                    iconEnabledColor: Colors.blue,
+                    isExpanded: true,
+                    alignment: Alignment.center,
                     borderRadius: BorderRadius.circular(30),
                     hint: const Text(
                       style: TextStyle(color: Colors.blue),
@@ -102,7 +120,10 @@ class _StudentSignUp4State extends State<StudentSignUp4> {
                     items: mondayTimeOfClass.map((mondayTimeOfClass) {
                       return DropdownMenuItem(
                         value: mondayTimeOfClass,
-                        child: Text(mondayTimeOfClass),
+                        child: Text(
+                          mondayTimeOfClass,
+                          style: const TextStyle(color: Colors.blue),
+                        ),
                       );
                     }).toList(),
                   ),
