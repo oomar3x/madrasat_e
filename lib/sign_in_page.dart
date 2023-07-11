@@ -1,25 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:madrasat_e_project/parent_sign_up_page.dart';
-import 'package:madrasat_e_project/student_sign_up_page.dart';
+import 'package:madrasat_e_project/parent_sign_in_page.dart';
+import 'package:madrasat_e_project/student_sign_in_page.dart';
 
-class SignUpPage extends StatelessWidget {
-  const SignUpPage({super.key});
+class SignInPage extends StatelessWidget {
+  const SignInPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Material(
       color: Colors.white,
       child: Center(
-        child: SingleChildScrollView(
-          child: Container(
+        child: ListView(children: [
+          Container(
             decoration: const BoxDecoration(
                 image: DecorationImage(
                     fit: BoxFit.fill,
                     image: AssetImage(
                       "assets/images/whitebackgroundpicture.jpg",
                     ))),
-            margin:
-                const EdgeInsets.only(bottom: 100.0, left: 20.0, right: 20.0),
+            margin: const EdgeInsets.only(left: 10.0, right: 10.0),
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
@@ -47,18 +46,9 @@ class SignUpPage extends StatelessWidget {
                         height: 236.0,
                         width: 236.0,
                         decoration: BoxDecoration(
+                          color: Colors.white,
                           border: Border.all(color: Colors.blue, width: 2.0),
                           borderRadius: BorderRadius.circular(20.0),
-
-                          //image: const DecorationImage(
-                          //fit: BoxFit.contain,
-                          //image:
-                          //AssetImage('assets/images/graduanticon.jpg'),
-                          //)
-                          //colorFilter: ColorFilter.mode(
-                          // Colors.blue, BlendMode.dstATop)),
-                          //color: Colors.blue,
-                          //shape: BoxShape.rectangle,
                         ),
                         child: Column(
                           children: [
@@ -76,13 +66,13 @@ class SignUpPage extends StatelessWidget {
                                 onPressed: () {
                                   Navigator.of(context).push(MaterialPageRoute(
                                       builder: (context) =>
-                                          const StudentSignUp()));
+                                          const StudentSignInPage()));
                                 },
                                 child: const Text(
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 15.0),
-                                    'Sign Up as a Student')),
+                                    'Sign In as a Student')),
                           ],
                         ),
                       )),
@@ -93,6 +83,7 @@ class SignUpPage extends StatelessWidget {
                     height: 236.0,
                     width: 236.0,
                     decoration: BoxDecoration(
+                      color: Colors.white,
                       border: Border.all(color: Colors.blue, width: 2.0),
                       borderRadius: BorderRadius.circular(20.0),
                     ),
@@ -111,19 +102,23 @@ class SignUpPage extends StatelessWidget {
                         TextButton(
                             onPressed: () {
                               Navigator.of(context).push(MaterialPageRoute(
-                                  builder: (context) => const ParentSignUp()));
+                                  builder: (context) =>
+                                      const ParentSignInPage()));
                             },
                             child: const Text(
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 15.0),
-                                'Sign Up as a Parent')),
+                                'Sign In as a Parent')),
                       ],
                     ),
                   ),
+                  const SizedBox(
+                    height: 100,
+                  )
                 ]),
           ),
-        ),
+        ]),
       ),
     );
   }

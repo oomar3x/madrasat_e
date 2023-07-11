@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:madrasat_e_project/student_sign_up_page4.dart';
+//import 'package:madrasat_e_project/student_sign_in_page.dart';
+import 'package:madrasat_e_project/sign_in_page.dart';
+//import 'package:madrasat_e_project/student_sign_up_page4.dart';
 //import 'package:madrasat_e_project/student_sign_up_page.dart';
 //import 'package:madrasat_e_project/student_sign_up_page2.dart';
 //import 'package:madrasat_e_project/student_sign_up_page3.dart';
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Madrasat project',
       home: Scaffold(
-        body: StudentSignUp4(),
+        body: SignInPage(),
       ),
     );
   }
