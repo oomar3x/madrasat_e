@@ -11,9 +11,10 @@ class LandingPage extends StatelessWidget {
             child: Container(
           decoration: const BoxDecoration(
               image: DecorationImage(
+                  fit: BoxFit.fill,
                   image: AssetImage(
-            "assets/images/whitebackgroundpicture.jpg",
-          ))),
+                    "assets/images/whitebackgroundpicture.jpg",
+                  ))),
           margin: const EdgeInsets.symmetric(horizontal: 20.0),
           child: Padding(
               padding: const EdgeInsets.all(30.0),
